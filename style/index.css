@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+}
+
+.navbar {
+    background: rgba(128, 128, 128, 0.833);
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 5px 100px black;
+    z-index: 10;
+    .nav-container {
+        display: grid;
+        grid-template-columns: 25% 75%;
+        margin: 0 50px 0 50px;
+        padding: 10px 0 10px 0;
+
+        .nav-logo-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a {
+                margin: 0 25px 0 25px;
+                font-weight: bolder;
+                text-decoration: transparent;
+                color: white;
+                transition: 0.5s;
+            }
+
+            a:hover {
+                text-decoration: underline 2px solid black;
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+.navbar-back {
+    background: tranparent;
+    width: 100%;
+z-index: 100;
+    .nav-container {
+        display: grid;
+        grid-template-columns: 25% 75%;
+        margin: 0 50px 0 50px;
+        padding: 10px 0 10px 0;
+
+        .nav-logo-container {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+
+#inicio{
+    scroll-margin-top: 120px;
+}
+.inicio {
+    background: rgb(91, 91, 91);
+    padding: 10px 0 0 0;
+    .slider {
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .slides {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        text-align: center;
+    }
+
+    .slide {
+        min-width: 100%;
+        /* Garante que cada slide ocupe toda a largura do contêiner */
+        text-align: center;
+
+        .chamada-container {
+            display: flex;
+            justify-content: center;
+
+            .chamada-button {
+                background: rgb(62, 62, 62);
+                width: 200px;
+                cursor: pointer;
+                padding: 10px 0 10px 0;
+                border-radius: 5px;
+                transition: 0.5s;
+                margin: 0 0 20px 0;
+                a{
+                    color: white;
+                    font-weight: bolder;
+                    text-decoration: none;
+                }
+            }
+            .chamada-button:hover{
+                transform: scale(1.1);
+                background: black;
+            }
+        }
+    }
+
+    .slider img {
+        width: 100%;
+        /* Garante que a imagem ocupe toda a largura do slide */
+        display: block;
+    }
+
+    .controls {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-50%);
+    }
+
+    .prev,
+    .next {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 20px;
+    }
+}
+#empresa{
+    scroll-margin-top: 120px;
+}
+.empresa{
+    background: grey;
+    .empresa-container{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 80px 100px 80px 100px;
+        .descricao-container{
+            text-align: justify;
+            .fundation-date{
+                border-bottom: 1px solid black;
+                width: 155px;
+                margin: 0 0 20px 0;
+            }
+            .name-corporation{
+                width: 380px;
+                font-size: 20px;
+                line-height: 0.9;
+                margin: 0 0 20px 0;
+            }
+            .descrition-corporation{
+                font-weight: bold;
+                font-size: 17px;
+                color: rgb(36, 36, 36);
+                width: 400px;
+            }
+        }
+        .image-info-corporation{
+            display: flex;
+            justify-content: center;
+            img{
+                box-shadow: 0 10px 50px black;
+            }
+        }
+    }
+}
+
+.some-products {
+    background: rgb(91, 91, 91);
+    padding: 10px 0 0 0;
+    .slider {
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .slides {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        text-align: center;
+    }
+
+    .slide {
+        min-width: 100%;
+        /* Garante que cada slide ocupe toda a largura do contêiner */
+        text-align: center;
+
+        .chamada-container {
+            display: flex;
+            justify-content: center;
+
+            .chamada-button {
+                background: rgb(62, 62, 62);
+                width: 200px;
+                cursor: pointer;
+                padding: 10px 0 10px 0;
+                border-radius: 5px;
+                transition: 0.5s;
+                margin: 0 0 20px 0;
+                a{
+                    color: white;
+                    font-weight: bolder;
+                    text-decoration: none;
+                }
+            }
+            .chamada-button:hover{
+                transform: scale(1.1);
+                background: black;
+            }
+        }
+    }
+
+    .slider img {
+        width: 100%;
+        /* Garante que a imagem ocupe toda a largura do slide */
+        display: block;
+    }
+
+    .controls {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-50%);
+    }
+
+    .prev,
+    .next {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 20px;
+    }
+}
