@@ -31,3 +31,47 @@ nextButton.addEventListener('click', () => {
 // Avança automaticamente a cada 5 segundos
 setInterval(nextSlide, 5000);
 
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const sliders = document.querySelectorAll('.slider'); // Seleciona todos os sliders
+
+    sliders.forEach((slider, index) => {
+        const slides = slider.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+        let currentIndex = 0;
+
+        const prevButton = slider.querySelector('.prev');
+        const nextButton = slider.querySelector('.next');
+        const slidesContainer = slider.querySelector('.slides');
+
+        // Função para atualizar a posição do slider
+        function updateSliderPosition() {
+            const offset = -currentIndex * 100; // Move o slider para a esquerda
+            slidesContainer.style.transform = `translateX(${offset}%)`;
+        }
+
+        // Avança para o próximo slide
+        function showNextSlide() {
+            currentIndex = (currentIndex === totalSlides - 1) ? 0 : currentIndex + 1;
+            updateSliderPosition();
+        }
+
+        // Retrocede para o slide anterior
+        prevButton.addEventListener('click', () => {
+            currentIndex = (currentIndex === 0) ? totalSlides - 1 : currentIndex - 1;
+            updateSliderPosition();
+        });
+
+        // Avança para o próximo slide quando o botão de próxima for clicado
+        nextButton.addEventListener('click', () => {
+            currentIndex = (currentIndex === totalSlides - 1) ? 0 : currentIndex + 1;
+            updateSliderPosition();
+        });
+
+        // Avança automaticamente a cada 5 segundos
+        setInterval(showNextSlide, 5000);
+    });
+});

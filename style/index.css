@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 .navbar {
@@ -7,7 +8,8 @@
     position: fixed;
     width: 100%;
     box-shadow: 0 5px 100px black;
-    z-index: 10;
+    z-index: 1;
+
     .nav-container {
         display: grid;
         grid-template-columns: 25% 75%;
@@ -43,7 +45,7 @@
 .navbar-back {
     background: tranparent;
     width: 100%;
-z-index: 100;
+
     .nav-container {
         display: grid;
         grid-template-columns: 25% 75%;
@@ -58,12 +60,12 @@ z-index: 100;
 }
 
 
-#inicio{
+#inicio {
     scroll-margin-top: 120px;
 }
+
 .inicio {
     background: rgb(91, 91, 91);
-    padding: 10px 0 0 0;
     .slider {
         width: 100%;
         margin: 0 auto;
@@ -94,15 +96,18 @@ z-index: 100;
                 border-radius: 5px;
                 transition: 0.5s;
                 margin: 0 0 20px 0;
-                a{
+
+                a {
                     color: white;
                     font-weight: bolder;
                     text-decoration: none;
                 }
             }
-            .chamada-button:hover{
+
+            .chamada-button:hover {
                 transform: scale(1.1);
                 background: black;
+                box-shadow: 0 5px 20px black;
             }
         }
     }
@@ -131,50 +136,67 @@ z-index: 100;
         font-size: 20px;
     }
 }
-#empresa{
-    scroll-margin-top: 120px;
+
+#empresa {
+    scroll-margin-top: 105px;
 }
-.empresa{
+
+.empresa {
     background: grey;
-    .empresa-container{
+    z-index: -1;
+    .empresa-container {
         display: grid;
         grid-template-columns: 50% 50%;
         padding: 80px 100px 80px 100px;
-        .descricao-container{
+
+        .descricao-container {
             text-align: justify;
-            .fundation-date{
+
+            .fundation-date {
                 border-bottom: 1px solid black;
                 width: 155px;
                 margin: 0 0 20px 0;
             }
-            .name-corporation{
+
+            .name-corporation {
                 width: 380px;
                 font-size: 20px;
                 line-height: 0.9;
                 margin: 0 0 20px 0;
             }
-            .descrition-corporation{
+
+            .descrition-corporation {
                 font-weight: bold;
                 font-size: 17px;
                 color: rgb(36, 36, 36);
                 width: 400px;
             }
         }
-        .image-info-corporation{
+
+        .image-info-corporation {
             display: flex;
             justify-content: center;
-            img{
+
+            img {
                 box-shadow: 0 10px 50px black;
             }
         }
     }
 }
-
-.some-products {
+#some-products{
+    scroll-margin-top: 105px;
+}
+.some-products{
     background: rgb(91, 91, 91);
-    padding: 10px 0 0 0;
+    z-index: 10;
+    padding: 42px 0 10px 0;
+    box-shadow: 0 5px 50px black;
+    text-align: center;
+    h1{
+        margin: 0 0 10px 0;
+    }
     .slider {
-        width: 100%;
+        width: 80%;
         margin: 0 auto;
         position: relative;
         overflow: hidden;
@@ -187,56 +209,92 @@ z-index: 100;
     }
 
     .slide {
-        min-width: 100%;
-        /* Garante que cada slide ocupe toda a largura do contêiner */
+        min-width: 100%; /* Garante que cada slide ocupe toda a largura do contêiner */
         text-align: center;
-
-        .chamada-container {
-            display: flex;
-            justify-content: center;
-
-            .chamada-button {
-                background: rgb(62, 62, 62);
-                width: 200px;
-                cursor: pointer;
-                padding: 10px 0 10px 0;
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+        a{
+            width: 250px;
+            margin: 10px 10px 10px 10px;
+            background: grey;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: 0.5s;
+            img{
                 border-radius: 5px;
-                transition: 0.5s;
-                margin: 0 0 20px 0;
-                a{
-                    color: white;
-                    font-weight: bolder;
-                    text-decoration: none;
+            }
+            .label{
+                color: white;
+                font-weight: bolder;
+                margin-top: 10px;
+                label{
+                    cursor: pointer;
                 }
             }
-            .chamada-button:hover{
-                transform: scale(1.1);
-                background: black;
-            }
+        }
+        a:hover{
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px black;
         }
     }
 
     .slider img {
-        width: 100%;
-        /* Garante que a imagem ocupe toda a largura do slide */
+        width: 100%; /* Garante que a imagem ocupe toda a largura do slide */
         display: block;
     }
 
     .controls {
-        position: absolute;
-        top: 50%;
-        width: 100%;
         display: flex;
-        justify-content: space-between;
-        transform: translateY(-50%);
+        justify-content: center;
+        margin: 10px 0 20px 0;
     }
 
-    .prev,
+    .prev{
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 20px;
+        margin: 0 5px 0 5px;
+        transition: 0.5s;
+        border: none;
+        border-radius: 5px;
+    }
     .next {
         background-color: rgba(0, 0, 0, 0.5);
         color: white;
         padding: 10px;
         cursor: pointer;
         font-size: 20px;
+        margin: 0 5px 0 5px;
+        transition: 0.5s;
+        border: none;
+        border-radius: 5px;
+    }
+    .more-products{
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        cursor: pointer;
+        font-size: 20px;
+        transition: 0.5s;
+        border: none;
+        display: flex;
+        align-items: center;
+        padding: 0 10px 0 10px;
+        border-radius: 5px;
+    }
+    .more-products:hover{
+        transform: scale(1.1);
+        box-shadow: 0 5px 10px black;
+    }
+    .prev:hover{
+        transform: scale(1.1);
+        box-shadow: 0 5px 10px black;
+    }
+    .next:hover{
+        transform: scale(1.1);
+        box-shadow: 0 5px 10px black;
     }
 }
