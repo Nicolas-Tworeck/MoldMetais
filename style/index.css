@@ -9,6 +9,7 @@
     width: 100%;
     box-shadow: 0 5px 100px black;
     z-index: 1;
+    backdrop-filter: blur(10px);
 
     .nav-container {
         display: grid;
@@ -43,7 +44,7 @@
 }
 
 .navbar-back {
-    background: tranparent;
+    background: rgb(91, 91, 91);
     width: 100%;
 
     .nav-container {
@@ -66,6 +67,7 @@
 
 .inicio {
     background: rgb(91, 91, 91);
+
     .slider {
         width: 100%;
         margin: 0 auto;
@@ -144,6 +146,7 @@
 .empresa {
     background: grey;
     z-index: -1;
+
     .empresa-container {
         display: grid;
         grid-template-columns: 50% 50%;
@@ -181,20 +184,26 @@
                 box-shadow: 0 10px 50px black;
             }
         }
+
     }
+
 }
-#some-products{
+
+#some-products {
     scroll-margin-top: 105px;
 }
-.some-products{
+
+.some-products {
     background: rgb(91, 91, 91);
     z-index: 10;
     padding: 42px 0 10px 0;
     box-shadow: 0 5px 50px black;
     text-align: center;
-    h1{
+
+    h1 {
         margin: 0 0 10px 0;
     }
+
     .slider {
         width: 80%;
         margin: 0 auto;
@@ -209,12 +218,14 @@
     }
 
     .slide {
-        min-width: 100%; /* Garante que cada slide ocupe toda a largura do contêiner */
+        min-width: 100%;
+        /* Garante que cada slide ocupe toda a largura do contêiner */
         text-align: center;
         display: flex;
         justify-content: center;
         margin: 20px 0;
-        a{
+
+        a {
             width: 250px;
             margin: 10px 10px 10px 10px;
             background: grey;
@@ -222,26 +233,31 @@
             text-decoration: none;
             border-radius: 10px;
             transition: 0.5s;
-            img{
+
+            img {
                 border-radius: 5px;
             }
-            .label{
+
+            .label {
                 color: white;
                 font-weight: bolder;
                 margin-top: 10px;
-                label{
+
+                label {
                     cursor: pointer;
                 }
             }
         }
-        a:hover{
+
+        a:hover {
             transform: scale(1.05);
             box-shadow: 0 10px 20px black;
         }
     }
 
     .slider img {
-        width: 100%; /* Garante que a imagem ocupe toda a largura do slide */
+        width: 100%;
+        /* Garante que a imagem ocupe toda a largura do slide */
         display: block;
     }
 
@@ -251,7 +267,7 @@
         margin: 10px 0 20px 0;
     }
 
-    .prev{
+    .prev {
         background-color: rgba(0, 0, 0, 0.5);
         color: white;
         padding: 10px;
@@ -262,6 +278,7 @@
         border: none;
         border-radius: 5px;
     }
+
     .next {
         background-color: rgba(0, 0, 0, 0.5);
         color: white;
@@ -273,7 +290,8 @@
         border: none;
         border-radius: 5px;
     }
-    .more-products{
+
+    .more-products {
         background-color: rgba(0, 0, 0, 0.5);
         color: white;
         cursor: pointer;
@@ -285,16 +303,65 @@
         padding: 0 10px 0 10px;
         border-radius: 5px;
     }
-    .more-products:hover{
+
+    .more-products:hover {
         transform: scale(1.1);
         box-shadow: 0 5px 10px black;
     }
-    .prev:hover{
+
+    .prev:hover {
         transform: scale(1.1);
         box-shadow: 0 5px 10px black;
     }
-    .next:hover{
+
+    .next:hover {
         transform: scale(1.1);
         box-shadow: 0 5px 10px black;
+    }
+}
+
+
+.valores {
+    background: white;
+    padding: 80px;
+
+    .valor-container {
+        background: gray;
+        padding: 40px;
+        border-radius: 5px;
+        .valor-content-container {
+            display: flex;
+            justify-content: center;
+
+            .missao {
+                font-size: 50px;
+                padding: 0 50px 0 50px;
+                line-height: 1.5;
+                a {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-decoration: none;
+                    color: white;
+                    font-weight: bold;
+                    cursor: pointer;
+                    transition: 0.5s;
+                    label {
+                        cursor: pointer;
+                        font-size: 20px;
+                    }
+                }
+                a:hover{
+                    transform: scale(1.1);
+                    text-shadow: 0 5px 20px black;
+                }
+            }
+
+            #missao,
+            #certificado,
+            #valor {
+                border-left: 1px solid rgb(181, 181, 181);
+            }
+        }
     }
 }
