@@ -535,6 +535,9 @@
                 transform: scale(1.05);
             }
         }
+        #email{
+            transform: none;
+        }
         a{
             text-decoration: none;
             color: white;
@@ -660,6 +663,15 @@
 
     }
  }
+ .empresa{
+    .empresa-container{
+        .name-corporation{
+            h1{
+                font-size: 30px;
+            }
+        }
+    }
+ }
 }
 
 @media (max-width:750px){
@@ -692,7 +704,7 @@
             padding: 100px 20px 100px 20px;
             .name-corporation{
                 h1{
-                    font-size: 30px;
+                    font-size: 25px;
                 }
             }
             .image-info-corporation{
