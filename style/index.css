@@ -394,6 +394,7 @@
                 font-size: 20px;
                 line-height: 0.9;
                 margin: 0 0 20px 0;
+                text-align: start;
             }
 
             .descrition-corporation {
@@ -568,7 +569,7 @@
         background-color: rgba(0, 0, 0, 0.5);
         color: white;
         cursor: pointer;
-        font-size: 20px;
+        font-size: 15px;
         transition: 0.5s;
         border: none;
         display: flex;
