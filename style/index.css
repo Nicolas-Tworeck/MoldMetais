@@ -274,21 +274,19 @@
     background: rgb(91, 91, 91);
 
     .slider {
-        width: 100%;
-        margin: 0 auto;
         position: relative;
         overflow: hidden;
+        width: 100%;
     }
-
+    
     .slides {
         display: flex;
-        transition: transform 0.5s ease-in-out;
-        text-align: center;
+        transition: transform 0.5s ease;
     }
-
+    
     .slide {
         min-width: 100%;
-        /* Garante que cada slide ocupe toda a largura do contêiner */
+        box-sizing: border-box;
         text-align: center;
 
         .chamada-container {

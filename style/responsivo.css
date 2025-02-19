@@ -139,7 +139,21 @@
 }
 
 @media (max-width:750px) {
-
+.inicio{
+    .slide{
+        .chamada-container{
+            .chamada-button{
+                transform: scale(70%);
+            }
+            .chamada-button:hover{
+                transform: scale(75%);
+            }
+        }
+    }
+    .prev, .next{
+        display: none;
+    }
+}
     .rodape {
         .rodape-container {
             grid-template-columns: 100%;
@@ -148,6 +162,19 @@
 }
 
 @media(max-width:550px) {
+    .inicio{
+        .slide{
+            .chamada-container{
+                .chamada-button{
+                    transform: scale(50%);
+                }
+                .chamada-button:hover{
+                    transform: scale(55%);
+                }
+            }
+        }
+    }
+
     #empresa {
         scroll-margin-top: 50px;
     }
