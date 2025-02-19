@@ -137,100 +137,34 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+
 // Adicione isso no seu arquivo JavaScript (script/href.js ou um novo arquivo)
+document.addEventListener('scroll', function () {
+    var someProductsSection = document.getElementById('some-products');
 
-document.addEventListener('DOMContentLoaded', function() {
-    const empresaSection = document.querySelector('.empresa');
-    const descricaoContainer = document.querySelector('.empresa .descricao-container');
-    const imageInfoCorporation = document.querySelector('.empresa .image-info-corporation');
+    var position = someProductsSection.getBoundingClientRect();
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                descricaoContainer.classList.add('animate-left');
-                imageInfoCorporation.classList.add('animate-right');
-                observer.unobserve(empresaSection); // Para de observar após a animação
-            }
-        });
-    }, {
-        threshold: 0.2// A animação começa quando 50% da seção está visível
-    });
-
-    observer.observe(empresaSection);
+    // Verifica se o conteúdo está quase visível na tela
+    if (position.top < window.innerHeight - 100) {
+        someProductsSection.classList.add('show');
+    }
 });
-
 
 // Adicione isso no seu arquivo JavaScript (script/href.js ou um novo arquivo)
 
-document.addEventListener('DOMContentLoaded', function() {
-    const someProductsSection = document.querySelector('.some-products');
-    const titleSomeProduct = document.querySelector('.some-products .title-some-product');
-    const sliderProducts = document.querySelector('.some-products .slider');
+document.addEventListener('scroll', function () {
+    var rodapeContent = document.querySelectorAll('.rodape-content');
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                titleSomeProduct.classList.add('animate-bottom');
-                sliderProducts.classList.add('animate-bottom');
-                observer.unobserve(someProductsSection); // Para de observar após a animação
-            }
-        });
-    }, {
-        threshold: 0.3 // A animação começa quando 50% da seção está visível
+    rodapeContent.forEach(function (item) {
+        var position = item.getBoundingClientRect();
+
+        // Verifica se o item está quase visível na tela (200px antes de chegar ao final)
+        if (position.top < window.innerHeight - 50) {
+            item.classList.add('show');
+        }
     });
-
-    observer.observe(someProductsSection);
 });
 
-
-
-// Adicione isso no seu arquivo JavaScript (script/href.js ou um novo arquivo)
-
-document.addEventListener('DOMContentLoaded', function() {
-    const valoresSection = document.querySelector('.valores');
-    const valoresContents = document.querySelectorAll('.valores .content');
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                // Aplicar animação da esquerda para os dois primeiros elementos
-                valoresContents[0].classList.add('animate-left');
-                valoresContents[1].classList.add('animate-left');
-
-                // Aplicar animação da direita para os dois últimos elementos
-                valoresContents[2].classList.add('animate-right');
-                valoresContents[3].classList.add('animate-right');
-
-                observer.unobserve(valoresSection); // Para de observar após a animação
-            }
-        });
-    }, {
-        threshold: 0.2 // A animação começa quando 50% da seção está visível
-    });
-
-    observer.observe(valoresSection);
-});
-
-
-// Adicione isso no seu arquivo JavaScript (script/href.js ou um novo arquivo)
-
-document.addEventListener('DOMContentLoaded', function() {
-    const rodapeSection = document.querySelector('.rodape');
-    const rodapeContainer = document.querySelector('.rodape .rodape-container');
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                rodapeContainer.classList.add('animate-bottom');
-                observer.unobserve(rodapeSection); // Para de observar após a animação
-            }
-        });
-    }, {
-        threshold: 0.3 // A animação começa quando 50% da seção está visível
-    });
-
-    observer.observe(rodapeSection);
-});
 
 
 

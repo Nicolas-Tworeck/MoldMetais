@@ -6,127 +6,42 @@
 
 
 
-/* Adicione isso no seu arquivo CSS (style/index.css ou style/root.css) */
 
-@keyframes slideInFromLeft {
-    0% {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
 
-@keyframes slideInFromRight {
-    0% {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
 
-.animate-left {
-    animation: slideInFromLeft 1s ease-out forwards;
-}
-
-.animate-right {
-    animation: slideInFromRight 1s ease-out forwards;
-}
-
-/* Esconder os elementos inicialmente */
-.empresa .descricao-container,
-.empresa .image-info-corporation {
-    opacity: 0;
-}
 
 
 
 /* Adicione isso no seu arquivo CSS (style/index.css ou style/root.css) */
-
-@keyframes slideInFromBottom {
-    0% {
-        transform: translateY(100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-.animate-bottom {
-    animation: slideInFromBottom 1s ease-out forwards;
-}
-
-/* Esconder os elementos inicialmente */
-.some-products .title-some-product,
-.some-products .slider {
+/* Estilo para a animação de entrada de baixo para cima */
+/* CSS para animação de baixo para cima para o conteúdo */
+#some-products .slides {
     opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
 }
 
-/* Adicione isso no seu arquivo CSS (style/index.css ou style/root.css) */
-
-@keyframes slideInFromLeft {
-    0% {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes slideInFromRight {
-    0% {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-.animate-left {
-    animation: slideInFromLeft 1s ease-out forwards;
-}
-
-.animate-right {
-    animation: slideInFromRight 1s ease-out forwards;
-}
-
-/* Esconder os elementos inicialmente */
-.valores .content {
-    opacity: 0;
+#some-products.show .slides {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 
 /* Adicione isso no seu arquivo CSS (style/index.css ou style/root.css) */
 
-@keyframes slideInFromBottom {
-    0% {
-        transform: translateY(100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
 
-.animate-bottom {
-    animation: slideInFromBottom 1s ease-out forwards;
-}
 
-/* Esconder os elementos inicialmente */
-.rodape .rodape-container {
+/* Adicione isso no seu arquivo CSS (style/index.css ou style/root.css) */
+
+.rodape-content {
     opacity: 0;
+    transform: translateY(50px); /* Começa 50px abaixo */
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.rodape-content.show {
+    opacity: 1;
+    transform: translateY(0); /* Volta para a posição original */
 }
 
 .navbar {

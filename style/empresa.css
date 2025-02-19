@@ -4,6 +4,123 @@
 }
 
 
+.empresa-info-container {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.empresa-info-container.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.empresa-image-container {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.empresa-image-container.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.text-history {
+    opacity: 0;
+    transform: translateX(100px); /* Começa 100px à direita */
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.text-history.show {
+    opacity: 1;
+    transform: translateX(0); /* Volta para a posição original */
+}
+
+@keyframes slideFromRight {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.ceo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ceo-image {
+    opacity: 0;
+    transform: translateX(-100px); /* A imagem começa fora da tela à esquerda */
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.bio {
+    opacity: 0;
+    transform: translateX(100px); /* O texto começa fora da tela à direita */
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.ceo-image.show {
+    opacity: 1;
+    transform: translateX(0); /* A imagem se move para sua posição original */
+}
+
+.bio.show {
+    opacity: 1;
+    transform: translateX(0); /* O texto se move para sua posição original */
+}
+
+@keyframes slideFromLeft {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideFromRight {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+.rodape-content {
+    opacity: 0;
+    transform: translateY(50px); /* Começa 50px abaixo */
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.rodape-content.show {
+    opacity: 1;
+    transform: translateY(0); /* Volta para a posição original */
+}
+
 
 
 .navbar {
