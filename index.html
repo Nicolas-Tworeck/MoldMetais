@@ -3,10 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="style/index.css">
     <link rel="stylesheet" href="style/root.css">
-    <title>MoldMetais</title>
+    <link rel="stylesheet" href="style/responsivo.css">
+    <title>HOME - MoldMetais</title>
 </head>
 
 <body>
@@ -18,11 +19,11 @@
                     <img src="img/SOLUTIONS.svg" alt="LOGO EMPRESA" width="100%">
                 </div>
                 <div class="nav-button-container">
-                    <a href="#inicio">INÍCIO</a>
-                    <a href="#empresa">A EMPRESA</a>
-                    <a href="#some-products">PRODUTOS</a>
-                    <a href="#valores">VALORES</a>
-                    <a href="#contato">CONTATO</a>
+                    <a id="ativado" >INÍCIO</a>
+                    <a onclick="empresa()">A EMPRESA</a>
+                    <a onclick="produtosHome()">PRODUTOS</a>
+                    <a onclick="valoresHome()">VALORES</a>
+                    <a onclick="contatoHome()">CONTATO</a>
                 </div>
                 <div class="hamburguer-container">
                     <div class="hamburger">
@@ -35,11 +36,11 @@
                     <div class="menu-bar">
                         <img src="img/logo-nav.svg" width="70%" alt="">
                     </div>
-                    <a href="#inicio">INÍCIO</a>
-                    <a href="#empresa">A EMPRESA</a>
-                    <a href="#some-products">PRODUTOS</a>
-                    <a href="#valores">VALORES</a>
-                    <a href="#contato">CONTATO</a>
+                    <a>INÍCIO</a>
+                    <a onclick="empresa()">A EMPRESA</a>
+                    <a onclick="produtosHome()">PRODUTOS</a>
+                    <a onclick="valoresHome()">VALORES</a>
+                    <a onclick="contatoHome()">CONTATO</a>
                 </div>
             </div>
 
@@ -70,12 +71,14 @@
                             <div class="chamada-button"><a href="">FALE CONOSCO</a></div>
                         </div>
                     </div>
-                    <div class="slide"><img src="img/SOLUTIONS.svg" alt="Slide 2">
+                    <div class="slide">
+                        <img src="img/SOLUTIONS.svg" alt="Slide 2">
                         <div class="chamada-container">
                             <div class="chamada-button"><a href="">FALE CONOSCO</a></div>
                         </div>
                     </div>
-                    <div class="slide"><img src="img/SOLUTIONS.svg" alt="Slide 3">
+                    <div class="slide">
+                        <img src="img/SOLUTIONS.svg" alt="Slide 3">
                         <div class="chamada-container">
                             <div class="chamada-button"><a href="">FALE CONOSCO</a></div>
                         </div>
@@ -113,6 +116,11 @@
                 </div>
                 <div class="image-info-corporation">
                     <img src="img/crealitytech.svg" alt="IMAGEM DE INFORMAÇÃO   ">
+                </div>
+            </div>
+            <div class="button-container">
+                <div class="button">
+                    <a onclick="empresa()">Saiba Mais</a>
                 </div>
             </div>
 
@@ -289,5 +297,7 @@
     </form>
 </body>
 <script src="script/slider.js"></script>
+<script src="script/href.js"></script>
+<script src="script/hamburguer.js"></script>
 
 </html>

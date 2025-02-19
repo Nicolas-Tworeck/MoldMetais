@@ -1,6 +1,6 @@
 let currentSlide = 0;
 const slides = document.querySelectorAll('.slide');
-const totalSlides = slides.length;
+const totalSlides = 3;
 const prevButton = document.querySelector('.prev');
 const nextButton = document.querySelector('.next');
 
@@ -71,29 +71,111 @@ document.addEventListener('DOMContentLoaded', () => {
             updateSliderPosition();
         });
 
-        // Avança automaticamente a cada 5 segundos
-        setInterval(showNextSlide, 5000);
     });
 });
 
 
 
-//  menu hamburguer
-const hamburger = document.querySelector('.hamburger');
-const menuMobile = document.querySelector('.menu-mobile');
 
-// Abrir ou fechar o menu ao clicar no botão hambúrguer
-hamburger.addEventListener('click', () => {
-    menuMobile.classList.toggle('active');
+
+
+
+
+
+// Adicione isso no seu arquivo JavaScript (script/href.js ou um novo arquivo)
+
+document.addEventListener('DOMContentLoaded', function() {
+    const empresaSection = document.querySelector('.empresa');
+    const descricaoContainer = document.querySelector('.empresa .descricao-container');
+    const imageInfoCorporation = document.querySelector('.empresa .image-info-corporation');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                descricaoContainer.classList.add('animate-left');
+                imageInfoCorporation.classList.add('animate-right');
+                observer.unobserve(empresaSection); // Para de observar após a animação
+            }
+        });
+    }, {
+        threshold: 0.2// A animação começa quando 50% da seção está visível
+    });
+
+    observer.observe(empresaSection);
 });
 
-// Fechar o menu ao clicar fora dele
-document.addEventListener('click', (event) => {
-    const isClickInsideMenu = menuMobile.contains(event.target);
-    const isClickOnHamburger = hamburger.contains(event.target);
 
-    // Fechar o menu apenas se o clique não for no menu nem no botão
-    if (!isClickInsideMenu && !isClickOnHamburger && menuMobile.classList.contains('active')) {
-        menuMobile.classList.remove('active');
-    }
+// Adicione isso no seu arquivo JavaScript (script/href.js ou um novo arquivo)
+
+document.addEventListener('DOMContentLoaded', function() {
+    const someProductsSection = document.querySelector('.some-products');
+    const titleSomeProduct = document.querySelector('.some-products .title-some-product');
+    const sliderProducts = document.querySelector('.some-products .slider');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                titleSomeProduct.classList.add('animate-bottom');
+                sliderProducts.classList.add('animate-bottom');
+                observer.unobserve(someProductsSection); // Para de observar após a animação
+            }
+        });
+    }, {
+        threshold: 0.3 // A animação começa quando 50% da seção está visível
+    });
+
+    observer.observe(someProductsSection);
 });
+
+
+
+// Adicione isso no seu arquivo JavaScript (script/href.js ou um novo arquivo)
+
+document.addEventListener('DOMContentLoaded', function() {
+    const valoresSection = document.querySelector('.valores');
+    const valoresContents = document.querySelectorAll('.valores .content');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Aplicar animação da esquerda para os dois primeiros elementos
+                valoresContents[0].classList.add('animate-left');
+                valoresContents[1].classList.add('animate-left');
+
+                // Aplicar animação da direita para os dois últimos elementos
+                valoresContents[2].classList.add('animate-right');
+                valoresContents[3].classList.add('animate-right');
+
+                observer.unobserve(valoresSection); // Para de observar após a animação
+            }
+        });
+    }, {
+        threshold: 0.2 // A animação começa quando 50% da seção está visível
+    });
+
+    observer.observe(valoresSection);
+});
+
+
+// Adicione isso no seu arquivo JavaScript (script/href.js ou um novo arquivo)
+
+document.addEventListener('DOMContentLoaded', function() {
+    const rodapeSection = document.querySelector('.rodape');
+    const rodapeContainer = document.querySelector('.rodape .rodape-container');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                rodapeContainer.classList.add('animate-bottom');
+                observer.unobserve(rodapeSection); // Para de observar após a animação
+            }
+        });
+    }, {
+        threshold: 0.3 // A animação começa quando 50% da seção está visível
+    });
+
+    observer.observe(rodapeSection);
+});
+
+
+
