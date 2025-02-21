@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="style/index.css">
     <link rel="stylesheet" href="style/root.css">
     <link rel="stylesheet" href="style/responsivo.css">
@@ -19,7 +20,7 @@
                     <img src="img/SOLUTIONS.svg" alt="LOGO EMPRESA" width="100%">
                 </div>
                 <div class="nav-button-container">
-                    <a id="ativado" >INÍCIO</a>
+                    <a id="ativado">INÍCIO</a>
                     <a onclick="empresa()">A EMPRESA</a>
                     <a onclick="produtosHome()">PRODUTOS</a>
                     <a onclick="valoresHome()">VALORES</a>
@@ -67,9 +68,11 @@
                 <div class="slides">
                     <div class="slide">
                         <img src="img/SOLUTIONS.svg" alt="Slide 1">
-                        <div class="chamada-container">
-                            <div class="chamada-button"><a href="">FALE CONOSCO</a></div>
-                        </div>
+                        <a onclick="whats()">
+                            <div class="chamada-container">
+                                <div class="chamada-button"><a onclick="whats()">FALE CONOSCO</a></div>
+                            </div>
+                        </a>
                     </div>
                     <div class="slide">
                         <img src="img/SOLUTIONS.svg" alt="Slide 2">
@@ -244,7 +247,7 @@
                         repellat corporis autem vel eligendi quos est.</p>
                 </div>
                 <div class="content">
-                    <a href="">
+                    <a onclick="certificado()">
                         <i class="bi bi-file-earmark-medical"></i>
                         <label>CERTIFICADOS</label>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam vel labore id repudiandae iure
@@ -269,7 +272,7 @@
                     </div>
                 </div>
                 <div class="rodape-content">
-                   
+
                     <div class="content">
                         <img src="img/SOLUTIONS.svg" alt="">
                     </div>
