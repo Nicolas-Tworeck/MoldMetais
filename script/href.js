@@ -8,7 +8,9 @@ function empresa() {
 function certificado(){
     window.location.href = "certificados.html";
 }
-
+function produtos(){
+    window.location.href = "produtosGeral.html";
+}
 function whats(){
     window.location.href = "https://wa.link/ctft0y";
 }
