@@ -135,6 +135,30 @@
 }
 
 
+
+/* Estilos base para as divs de texto e imagem */
+.text-certificado, .image-certificado {
+    opacity: 0;
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+/* Texto começa levemente deslocado para a esquerda */
+.text-certificado {
+    transform: translateX(-20px); /* Movimento sutil */
+}
+
+/* Imagem começa levemente deslocada para a direita */
+.image-certificado {
+    transform: translateX(20px); /* Movimento sutil */
+}
+
+/* Quando a div estiver visível, aplicar essas classes */
+.grid-certificado.visible .text-certificado,
+.grid-certificado.visible .image-certificado {
+    opacity: 1;
+    transform: translateX(0); /* Volta à posição original */
+}
+
 .area-certificado {
     background-image: url('../img/SOLUTIONS-cinza.svg');
     padding: 100px 0;
