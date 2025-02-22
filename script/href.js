@@ -14,3 +14,7 @@ function produtos(){
 function whats(){
     window.location.href = "https://wa.link/ctft0y";
 }
+
+function projeto1(){
+    window.location.href = "produto1.html";
+}
