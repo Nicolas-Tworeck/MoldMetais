@@ -363,6 +363,7 @@
         text-align: center;
         display: flex;
         justify-content: center;
+
         h1 {
             margin: 0 0 10px 0;
             width: 90%;
@@ -411,6 +412,7 @@
                 font-weight: bolder;
                 margin: 10px;
                 text-align: justify;
+
                 label {
                     cursor: pointer;
                 }
@@ -447,8 +449,9 @@
             .label {
                 color: var(--black-color);
                 font-weight: bolder;
-                margin: 10px ;
+                margin: 10px;
                 text-align: justify;
+
                 label {
                     cursor: pointer;
                 }
@@ -534,12 +537,10 @@
 }
 
 .valores {
-    background: white;
+    background: var(--black-color);
     padding: 80px;
 
     .valores-container {
-        background: rgb(190, 190, 190);
-        box-shadow: 0 5px 20px black;
 
         border-radius: 5px;
         display: grid;
@@ -552,12 +553,18 @@
             align-items: center;
             text-align: justify;
 
+            p {
+                color: var(--white-color);
+            }
+
             label {
                 margin: 10px 0 10px 0;
+                color: var(--white-color);
             }
 
             i {
                 font-size: 50px;
+                color: var(--yellow-color);
             }
 
             a {
@@ -566,17 +573,22 @@
                 flex-direction: column;
                 align-items: center;
                 text-align: justify;
-                color: rgb(77, 77, 77);
+                color: var(--yellow-color);
                 transition: 0.5s;
+
+                p {
+                    color: var(--yellow-color);
+                }
 
                 label {
                     cursor: pointer;
+                    color: var(--yellow-color);
                 }
             }
 
             a:hover {
                 transform: scale(1.05);
-                text-shadow: 0 5px 20px black;
+                text-shadow: 0 5px 20px var(--yellow-color);
             }
         }
     }
@@ -584,7 +596,7 @@
 
 
 .rodape {
-    background: rgb(73, 73, 73);
+    background: var(--yellow-black);
     padding: 50px;
     display: flex;
     justify-content: center;
@@ -596,7 +608,10 @@
         grid-template-columns: 33% 33% 33%;
 
     }
-
+    #image-rodape{
+        width: 100%;
+        align-items: center;
+    }
     .rodape-content {
         display: flex;
         align-items: center;
@@ -604,15 +619,16 @@
     }
 
     .titles {
-        background: gray;
+        background: var(--black-color);
         display: flex;
         justify-content: center;
         width: 90%;
         border-radius: 5px;
-
+        padding: 5px;
         label {
             font-weight: bolder;
             font-size: 20px;
+            color: var(--yellow-color);
         }
     }
 
