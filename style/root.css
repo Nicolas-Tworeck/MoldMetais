@@ -19,6 +19,16 @@ body{
     }
 }
 #ativado{
-    text-decoration: underline 2px solid black;
+    text-decoration: underline 2px solid var(--yellow-color);
     transform: scale(1.1);
+}
+
+
+
+:root{
+    --black-color:#000000;
+    --yellow-color:#ffd90a;
+    --yellow-black:#917b00;
+    --white-color: #f0f0f0;
+    --white-opaque:#7c7c7c;
 }

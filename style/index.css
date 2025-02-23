@@ -35,20 +35,22 @@
 
 .rodape-content {
     opacity: 0;
-    transform: translateY(50px); /* Começa 50px abaixo */
+    transform: translateY(50px);
+    /* Começa 50px abaixo */
     transition: opacity 1s ease, transform 1s ease;
 }
 
 .rodape-content.show {
     opacity: 1;
-    transform: translateY(0); /* Volta para a posição original */
+    transform: translateY(0);
+    /* Volta para a posição original */
 }
 
 .navbar {
-    background: rgba(128, 128, 128, 0.833);
+    background: var(--black-color);
     position: fixed;
     width: 100%;
-    box-shadow: 0 5px 100px black;
+    box-shadow: 0 5px 100px var(--black-color);
     z-index: 1;
     backdrop-filter: blur(10px);
 
@@ -72,13 +74,13 @@
                 margin: 0 25px 0 25px;
                 font-weight: bolder;
                 text-decoration: transparent;
-                color: white;
+                color: var(--white-color);
                 transition: 0.5s;
                 font-size: 20px;
             }
 
             a:hover {
-                text-decoration: underline 2px solid black;
+                text-decoration: underline 2px solid var(--yellow-color);
                 transform: scale(1.1);
             }
         }
@@ -103,7 +105,7 @@
 .hamburger span {
     display: block;
     height: 4px;
-    background: black;
+    background: var(--yellow-color);
     border-radius: 2px;
     transition: all 0.3s ease;
     width: 30px;
@@ -186,19 +188,19 @@
 }
 
 .inicio {
-    background: rgb(91, 91, 91);
+    background: var(--black-color);
 
     .slider {
         position: relative;
         overflow: hidden;
         width: 100%;
     }
-    
+
     .slides {
         display: flex;
         transition: transform 0.5s ease;
     }
-    
+
     .slide {
         min-width: 100%;
         box-sizing: border-box;
@@ -207,9 +209,11 @@
         .chamada-container {
             display: flex;
             justify-content: center;
+            margin-top: -10%;
+            margin-bottom: 80px;
 
             .chamada-button {
-                background: rgb(62, 62, 62);
+                background: var(--black-color);
                 width: 200px;
                 cursor: pointer;
                 padding: 10px 0 10px 0;
@@ -218,16 +222,21 @@
                 margin: 0 0 20px 0;
 
                 a {
-                    color: white;
+                    color: var(--white-color);
                     font-weight: bolder;
                     text-decoration: none;
+                    transition: 0.5s;
                 }
             }
 
             .chamada-button:hover {
                 transform: scale(1.1);
-                background: black;
-                box-shadow: 0 5px 20px black;
+                background: var(--yellow-color);
+                box-shadow: 0 5px 20px var(--black-color);
+
+                a {
+                    color: var(--black-color);
+                }
             }
         }
     }
@@ -250,7 +259,7 @@
     .prev,
     .next {
         background-color: rgba(0, 0, 0, 0.5);
-        color: white;
+        color: var(--white-color);
         padding: 10px;
         cursor: pointer;
         font-size: 20px;
@@ -262,7 +271,7 @@
 }
 
 .empresa {
-    background: grey;
+    background: var(--black-color);
     z-index: -1;
 
     .button-container {
@@ -272,21 +281,23 @@
 
         .button {
             margin: 0 0 20px 0;
-            background: rgb(44, 44, 44);
+            background: var(--yellow-color);
             border-radius: 5px;
             padding: 10px;
             transition: 0.5s;
             cursor: pointer;
+
             a {
                 font-size: 20px;
                 font-weight: bolder;
-                color: white;
+                color: var(--black-color);
                 text-decoration: none;
             }
         }
-        .button:hover{
+
+        .button:hover {
             transform: scale(1.05);
-            box-shadow: 0 5px 20px black;
+            box-shadow: 0 5px 20px var(--white-opaque);
         }
     }
 
@@ -299,9 +310,10 @@
             text-align: justify;
 
             .fundation-date {
-                border-bottom: 1px solid black;
+                border-bottom: 1px solid var(--yellow-color);
                 width: 155px;
                 margin: 0 0 20px 0;
+                color: var(--white-color);
             }
 
             .name-corporation {
@@ -310,13 +322,14 @@
                 line-height: 0.9;
                 margin: 0 0 20px 0;
                 text-align: start;
+                color: var(--white-color);
             }
 
             .descrition-corporation {
                 font-weight: bold;
                 font-size: 17px;
-                color: rgb(36, 36, 36);
-                width:80%;
+                color: var(--white-opaque);
+                width: 80%;
             }
         }
 
@@ -325,7 +338,7 @@
             justify-content: center;
 
             img {
-                box-shadow: 0 10px 50px black;
+                box-shadow: 0 10px 50px var(--white-opaque);
                 border-radius: 5px;
             }
         }
@@ -339,20 +352,24 @@
 }
 
 .some-products {
-    background: rgb(91, 91, 91);
+    background: var(--yellow-color);
     z-index: 10;
     padding: 42px 0 10px 0;
-    box-shadow: 0 5px 50px black;
+    box-shadow: 0 5px 50px var(--black-color);
     text-align: center;
 
     .title-some-product {
         width: 100%;
         text-align: center;
+        display: flex;
+        justify-content: center;
+        h1 {
+            margin: 0 0 10px 0;
+            width: 90%;
+            border-bottom: 2px solid var(--black-color);
+        }
     }
 
-    h1 {
-        margin: 0 0 10px 0;
-    }
 
     .slider {
         width: 80%;
@@ -379,7 +396,7 @@
         a {
             width: 250px;
             margin: 10px 10px 10px 10px;
-            background: gray;
+            background: var(--white-color);
             padding: 10px;
             text-decoration: none;
             border-radius: 10px;
@@ -390,10 +407,10 @@
             }
 
             .label {
-                color: white;
+                color: var(--black-color);
                 font-weight: bolder;
-                margin-top: 10px;
-
+                margin: 10px;
+                text-align: justify;
                 label {
                     cursor: pointer;
                 }
@@ -402,7 +419,7 @@
 
         a:hover {
             transform: scale(1.05);
-            box-shadow: 0 10px 20px black;
+            box-shadow: 0 10px 20px var(--black-color);
         }
     }
 
@@ -417,7 +434,7 @@
         a {
             width: 250px;
             margin: 10px 10px 10px 10px;
-            background: grey;
+            background: var(--white-color);
             padding: 10px;
             text-decoration: none;
             border-radius: 10px;
@@ -428,10 +445,10 @@
             }
 
             .label {
-                color: white;
+                color: var(--black-color);
                 font-weight: bolder;
-                margin-top: 10px;
-
+                margin: 10px ;
+                text-align: justify;
                 label {
                     cursor: pointer;
                 }
@@ -440,7 +457,7 @@
 
         a:hover {
             transform: scale(1.05);
-            box-shadow: 0 10px 20px black;
+            box-shadow: 0 10px 20px var(--black-color);
         }
     }
 
@@ -457,8 +474,8 @@
     }
 
     .prev {
-        background-color: rgba(0, 0, 0, 0.5);
-        color: white;
+        background-color: var(--yellow-black);
+        color: var(--white-color);
         padding: 10px;
         cursor: pointer;
         font-size: 20px;
@@ -469,8 +486,8 @@
     }
 
     .next {
-        background-color: rgba(0, 0, 0, 0.5);
-        color: white;
+        background-color: var(--yellow-black);
+        color: var(--white-color);
         padding: 10px;
         cursor: pointer;
         font-size: 20px;
@@ -481,8 +498,8 @@
     }
 
     .more-products {
-        background-color: rgba(0, 0, 0, 0.5);
-        color: white;
+        background-color: var(--yellow-black);
+        color: var(--white-color);
         cursor: pointer;
         font-size: 15px;
         transition: 0.5s;
@@ -495,17 +512,20 @@
 
     .more-products:hover {
         transform: scale(1.1);
-        box-shadow: 0 5px 10px black;
+        box-shadow: 0 5px 10px var(--black-color);
+        background: var(--black-color);
     }
 
     .prev:hover {
         transform: scale(1.1);
-        box-shadow: 0 5px 10px black;
+        box-shadow: 0 5px 10px var(--black-color);
+        background: var(--black-color);
     }
 
     .next:hover {
         transform: scale(1.1);
-        box-shadow: 0 5px 10px black;
+        box-shadow: 0 5px 10px var(--black-color);
+        background: var(--black-color);
     }
 }
 

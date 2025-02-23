@@ -165,6 +165,7 @@
 
 @media(max-width:550px) {
     .inicio{
+        padding: 0;
         .slide{
             .chamada-container{
                 .chamada-button{
@@ -193,9 +194,7 @@
         scroll-margin-top: 50px;
     }
 
-    .inicio {
-        padding: 10px 0 0 0;
-    }
+   
 
     .empresa {
         .empresa-container {
