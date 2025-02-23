@@ -124,10 +124,10 @@
 
 
 .navbar {
-    background: rgba(128, 128, 128, 0.833);
+    background: var(--black-color);
     position: fixed;
     width: 100%;
-    box-shadow: 0 5px 100px black;
+    box-shadow: 0 5px 100px var(--black-color);
     z-index: 1;
     backdrop-filter: blur(10px);
 
@@ -151,13 +151,13 @@
                 margin: 0 25px 0 25px;
                 font-weight: bolder;
                 text-decoration: transparent;
-                color: white;
+                color: var(--white-color);
                 transition: 0.5s;
                 font-size: 20px;
             }
 
             a:hover {
-                text-decoration: underline 2px solid black;
+                text-decoration: underline 2px solid var(--yellow-color);
                 transform: scale(1.1);
             }
         }
@@ -183,7 +183,7 @@
 .hamburger span {
     display: block;
     height: 4px;
-    background: black;
+    background: var(--yellow-color);
     border-radius: 2px;
     transition: all 0.3s ease;
     width: 30px;
@@ -244,7 +244,7 @@
 }
 
 .navbar-back {
-    background: rgb(91, 91, 91);
+    background: var(--black-color);
     width: 100%;
 
     .nav-container {
@@ -273,10 +273,11 @@
 
         a:hover {
             transform: scale(1.1);
+            color: var(--yellow-color);
         }
 
         p {
-            color: gray;
+            color: var(--gray-color);
         }
     }
 }
@@ -306,7 +307,7 @@
         .title-number {
             display: flex;
             justify-content: center;
-            border-bottom: 2px solid gray;
+            border-bottom: 2px solid var(--yellow-color);
             padding: 0 0 20px 0;
 
             h2 {
@@ -326,6 +327,7 @@
 
                 i {
                     font-size: 30px;
+                    color: var(--yellow-color);
                 }
 
                 strong {
@@ -338,7 +340,7 @@
 
 .empresa {
     padding: 50px;
-    background: rgb(187, 187, 187);
+    background: var(--black-color);
 
     .empresa-container {
         padding: 50px;
@@ -358,14 +360,19 @@
                 .title-info {
                     width: 100%;
 
-                    h2 {}
+                    h2 {
+                        color: var(--white-color);
+                        text-decoration: underline var(--yellow-color);
+                    }
                 }
 
                 .folder {
                     width: 100%;
 
                     h3 {
+                        font-size: 15px;
                         margin: 0 0 10px 0;
+                        color: var(--white-color);
                     }
                 }
 
@@ -374,6 +381,7 @@
 
                     p {
                         margin: 0 0 10px 0;
+                        color: var(--gray-color);
                     }
                 }
             }
@@ -385,7 +393,7 @@
                 .image {
                     img {
                         width: 100%;
-                        box-shadow: 0 5px 20px black;
+                        box-shadow: 0 5px 20px var(--white-color);
                     }
                 }
             }
@@ -394,8 +402,9 @@
 }
 
 .historia {
-    padding: 100px 60px;
-    background-image: url('../img/SOLUTIONS-cinza.svg');
+    padding: 0  60px 100px 60px;
+    background-image: url('../img/fundo.svg');
+    background-position: center center;
     background-repeat: no-repeat;
 
     .history-container {
@@ -411,11 +420,11 @@
             border-radius: 5px;
 
             .border {
-                border-bottom: 2px solid gray;
-                border-top: 2px solid gray;
+                border-bottom: 2px solid var(--yellow-color);
+                border-top: 2px solid var(--yellow-color);
                 width: 150px;
                 padding: 5px 0 5px 0;
-                color: white;
+                color: var(--white-color);
             }
 
             .descrition-history {
@@ -423,7 +432,7 @@
 
                 p {
                     margin: 10px 0 0 0;
-                    color: white;
+                    color: var(--white-color);
                 }
             }
         }
@@ -446,7 +455,7 @@
 
             img {
                 width: 90%;
-                box-shadow: 0 5px 20px black;
+                box-shadow: 0 5px 20px var(--black-color);
             }
         }
 
@@ -457,7 +466,7 @@
 
             .title-bio {
                 width: 180px;
-                border-bottom: 2px solid gray;
+                border-bottom: 2px solid var(--yellow-color);
                 margin-bottom: 20px;
             }
 
@@ -470,7 +479,7 @@
 
 
 .rodape {
-    background: rgb(73, 73, 73);
+    background: var(--yellow-black);
     padding: 50px;
     display: flex;
     justify-content: center;
@@ -482,7 +491,10 @@
         grid-template-columns: 33% 33% 33%;
 
     }
-
+    #image-rodape{
+        width: 100%;
+        align-items: center;
+    }
     .rodape-content {
         display: flex;
         align-items: center;
@@ -490,15 +502,16 @@
     }
 
     .titles {
-        background: gray;
+        background: var(--black-color);
         display: flex;
         justify-content: center;
         width: 90%;
         border-radius: 5px;
-
+        padding: 5px;
         label {
             font-weight: bolder;
             font-size: 20px;
+            color: var(--yellow-color);
         }
     }
 
@@ -545,7 +558,6 @@
         }
     }
 }
-
 @media(max-width:1075px) {
     .empresa {
         .empresa-container {
