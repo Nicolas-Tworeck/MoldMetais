@@ -18,3 +18,7 @@ function whats(){
 function projeto1(){
     window.location.href = "produto1.html";
 }
+
+function projeto2(){
+    window.location.href = "projeto2.html";
+}
