@@ -166,7 +166,7 @@
 }
 
 .navbar-back {
-    background: rgb(91, 91, 91);
+    background: var(--black-color);
     width: 100%;
 
     .nav-container {
