@@ -14,6 +14,9 @@ function produtos(){
 function servicos(){
     window.location.href = "servicos.html";
 }
+function contato(){
+    window.location.href = "contato.html";
+}
 function whats(){
     window.location.href = "https://wa.link/ctft0y";
 }

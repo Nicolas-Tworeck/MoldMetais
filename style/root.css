@@ -17,6 +17,10 @@ body{
     a{
         cursor: pointer;
     }
+    #email {
+        transform: none;
+        cursor: default;
+    }
 }
 #ativado{
     text-decoration: underline 2px solid var(--yellow-color);
