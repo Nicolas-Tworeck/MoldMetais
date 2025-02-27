@@ -23,7 +23,7 @@
                 <div class="nav-button-container">
                     <a id="ativado">INÍCIO</a>
                     <a onclick="empresa()">A EMPRESA</a>
-                    <a onclick="produtos()">PROJETOS</a>
+                    <a onclick="produtos()">PRODUTOS</a>
                     <a onclick="servicos()">SERVIÇOS</a>
                     <a onclick="contato()">CONTATO</a>
                 </div>
@@ -40,7 +40,7 @@
                     </div>
                     <a>INÍCIO</a>
                     <a onclick="empresa()">A EMPRESA</a>
-                    <a onclick="produtos()">PROJETOS</a>
+                    <a onclick="produtos()">PRODUTOS</a>
                     <a onclick="servicos()">SERVIÇOS</a>
                     <a onclick="contato()">CONTATO</a>
                 </div>
@@ -189,14 +189,16 @@
 
                     <div class="slide-cell">
                         <a onclick="projeto1()">
-                            <img src="https://th.bing.com/th/id/OIP.RKPtEjlezKMvQrkPWfpfuQHaFj?w=2048&h=1536&rs=1&pid=ImgDetMain"  alt="">
+                            <img src="https://th.bing.com/th/id/OIP.RKPtEjlezKMvQrkPWfpfuQHaFj?w=2048&h=1536&rs=1&pid=ImgDetMain"
+                                alt="">
                             <div class="label">
                                 <label>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quaerat labore aut
                                     quidem sed, pariatur rerum mollitia quisquam.</label>
                             </div>
                         </a>
                         <a onclick="projeto1()">
-                            <img src="https://th.bing.com/th/id/OIP.8Wd-buxGLmIiiWeItN-bqQHaEK?rs=1&pid=ImgDetMain" height="143.7px" alt="">
+                            <img src="https://th.bing.com/th/id/OIP.8Wd-buxGLmIiiWeItN-bqQHaEK?rs=1&pid=ImgDetMain"
+                                height="143.7px" alt="">
                             <div class="label">
                                 <label>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae hic sapiente
                                     sequi, ipsa.</label>
@@ -207,7 +209,8 @@
                     </div>
                     <div class="slide-cell">
                         <a href="">
-                            <img src="https://th.bing.com/th/id/OIP.HE_FKU95RTFfeqtC1f5hjwHaEz?rs=1&pid=ImgDetMain" height="143.7px" alt="">
+                            <img src="https://th.bing.com/th/id/OIP.HE_FKU95RTFfeqtC1f5hjwHaEz?rs=1&pid=ImgDetMain"
+                                height="143.7px" alt="">
                             <div class="label">
                                 <label>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta cum aspernatur
                                     molestiae amet vel deserunt.</label>
@@ -278,7 +281,7 @@
                         <label>CONTATO</label>
                     </div>
                     <div class="content">
-                        <a href=""><i class="bi bi-whatsapp"></i>(xx)xxxxx-xxxx</a>
+                        <a onclick="whats()"><i class="bi bi-whatsapp"></i>(42) 3235-0389</a>
                         <a href=""><i class="bi bi-instagram"></i>@moldmetais</a>
                         <a id="email"><i class="bi bi-envelope"></i>moldmetais@moldmetais.com.br</a>
                         <a href=""><i class="bi bi-geo-alt"></i>Av. Euzébio de Queiróz, 551</a>
@@ -303,7 +306,13 @@
                 </div>
             </div>
         </div>
-
+        <div class="whats-icon">
+            <a onclick="whats()">
+                <div class="icon-whats">
+                    <i class="bi bi-whatsapp"></i>
+                </div>
+            </a>
+        </div>
     </form>
 </body>
 <script src="script/slider.js"></script>

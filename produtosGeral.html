@@ -23,7 +23,7 @@
                 <div class="nav-button-container">
                     <a onclick="inicio()">INÍCIO</a>
                     <a onclick="empresa()">A EMPRESA</a>
-                    <a id="ativado">PROJETOS</a>
+                    <a id="ativado">PRODUTOS</a>
                     <a onclick="servicos()">SERVIÇOS</a>
                     <a onclick="contato()">CONTATO</a>
                 </div>
@@ -40,7 +40,7 @@
                     </div>
                     <a onclick="inicio()">INÍCIO</a>
                     <a onclick="empresa()">A EMPRESA</a>
-                    <a>PROJETOS</a>
+                    <a>PRODUTOS</a>
                     <a onclick="servicos()">SERVIÇOS</a>
                     <a onclick="contato()">CONTATO</a>
                 </div>
@@ -62,13 +62,13 @@
         <div class="nav-header">
             <div class="nav-header-container">
                 <a onclick="inicio()">Home</a>
-                <p>>> Projetos</p>
+                <p>>> Produtos</p>
             </div>
         </div>
 
         <div class="apresentacao-produtos">
             <div class="apresentacao-produtos-container">
-                <h1>CONHEÇA MAIS SOBRE NOSSOS PROJETOS</h1>
+                <h1>CONHEÇA MAIS SOBRE NOSSOS PRODUTOS</h1>
                 <p>Nossos projetos são todos personalizados conforme o cliente deseja, desde o diâmetro da chapa de aço
                     até acabamentos dealhados. Conheça alguns de nossos projetos abaixo.</p>
                 <div class="barra-maior">
@@ -77,7 +77,7 @@
         </div>
         <div class="text-produto">
             <div class="text-produto-container">
-                <h2>PROJETOS</h2>
+                <h2>PRODUTOS</h2>
             </div>
         </div>
 
@@ -136,7 +136,7 @@
                         <label>CONTATO</label>
                     </div>
                     <div class="content">
-                        <a href=""><i class="bi bi-whatsapp"></i>(xx)xxxxx-xxxx</a>
+                        <a onclick="whats()"><i class="bi bi-whatsapp"></i>(42) 3235-0389</a>
                         <a href=""><i class="bi bi-instagram"></i>@moldmetais</a>
                         <a id="email"><i class="bi bi-envelope"></i>moldmetais@moldmetais.com.br</a>
                         <a href=""><i class="bi bi-geo-alt"></i>Av. Euzébio de Queiróz, 551</a>
@@ -161,7 +161,13 @@
                 </div>
             </div>
         </div>
-
+        <div class="whats-icon">
+            <a onclick="whats()">
+                <div class="icon-whats">
+                    <i class="bi bi-whatsapp"></i>
+                </div>
+            </a>
+        </div>
     </form>
 </body>
 <script src="script/hamburguer.js"></script>

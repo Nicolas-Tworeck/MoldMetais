@@ -22,6 +22,33 @@ body{
         cursor: default;
     }
 }
+.whats-icon {
+    position: fixed;
+    bottom: 20px; /* Distância do fundo da tela */
+    right: 20px; /* Distância da direita da tela */
+    z-index: 1000; /* Garante que o ícone fique acima de outros elementos */
+}
+
+.icon-whats {
+    background-color: #25D366; /* Cor de fundo do WhatsApp */
+    border-radius: 50%; /* Deixa o ícone redondo */
+    width: 50px; /* Largura do ícone */
+    height: 50px; /* Altura do ícone */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar o ícone */
+    transition: background-color 0.3s ease; /* Transição suave ao passar o mouse */
+}
+
+.icon-whats:hover {
+    background-color: #128C7E; /* Cor de fundo ao passar o mouse */
+}
+
+.icon-whats i {
+    color: white; /* Cor do ícone */
+    font-size: 24px; /* Tamanho do ícone */
+}
 #ativado{
     text-decoration: underline 2px solid var(--yellow-color);
     transform: scale(1.1);

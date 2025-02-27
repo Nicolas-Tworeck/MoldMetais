@@ -18,7 +18,7 @@ function contato(){
     window.location.href = "contato.html";
 }
 function whats(){
-    window.location.href = "https://wa.link/ctft0y";
+    window.location.href = "https://wa.link/776as1";
 }
 
 function projeto1(){
