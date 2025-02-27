@@ -20,7 +20,18 @@ function contato(){
 function whats(){
     window.location.href = "https://wa.link/776as1";
 }
-
+function maps(){
+    window.location.href = "https://maps.app.goo.gl/3QW1TYi2GZddanWj6";
+}
+function whatsCTH(){
+    window.location.href = "https://wa.link/kh9e4r";
+}
+function email(){
+    window.location.href = "mailto:moldmetais@outlook.com.br";
+}
+function emailCTH(){
+    window.location.href = "mailto:contato@crealitytech.com.br";
+}
 function projeto1(){
     window.location.href = "produto1.html";
 }
