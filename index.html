@@ -110,17 +110,17 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit non quisquam at numquam
                             quo dolores. Consequuntur, neque excepturi hic deleniti optio veritatis maxime rem error
                             sapiente cupiditate iure quos nobis!</p><br>
-
+        
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum adipisci voluptatem alias
                             praesentium ut ab, explicabo facere corrupti, nulla doloribus at nisi quisquam, quaerat quae
                             nemo molestiae. Placeat, illo aliquid. Lorem ipsum dolor sit amet consectetur adipisicing
                             elit. Voluptatem mollitia recusandae aliquid voluptas quo voluptates quam, beatae excepturi
                             laboriosam aspernatur quibusdam maiores architecto nam eum et labore iste illum ipsa?</p>
                     </div>
-
                 </div>
                 <div class="image-info-corporation">
-                    <img src="img/foto-empresa.jpg" alt="IMAGEM DE INFORMAÇÃO   ">
+                    <!-- Imagem da empresa com onclick para abrir o popup -->
+                    <img id="empresaImg" src="img/primeira-empresa.jpg" alt="IMAGEM DE INFORMAÇÃO" width="100%" onclick="openPopup()">
                 </div>
             </div>
             <div class="button-container">
@@ -128,9 +128,19 @@
                     <a onclick="empresa()">Saiba Mais</a>
                 </div>
             </div>
-
         </div>
-
+        
+        <!-- Popup para alternar entre imagens -->
+        <div id="imagePopup" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup()">&times;</span>
+                <div class="modal-image-container">
+                    <img id="modalImg" src="img/primeira-empresa.jpg" alt="Imagem Ampliada">
+                    <span class="arrow left" onclick="changeImage(-1)">&#10094;</span>
+                    <span class="arrow right" onclick="changeImage(1)">&#10095;</span>
+                </div>
+            </div>
+        </div>
 
         <div class="some-products" id="some-products">
             <div class="title-some-product">
@@ -315,6 +325,50 @@
         </div>
     </form>
 </body>
+
+
+<script>
+// Array de imagens pré-definidas (certifique-se de que os caminhos estão corretos)
+const images = [
+    "img/primeira-empresa.jpg", // Corrigir a extensão para .jpg
+    "img/segunda-empresa.jpg",
+    "img/terceira-empresa.jpg"
+];
+
+// Índice da imagem atual
+let currentImageIndex = 0;
+
+// Função para abrir o popup
+function openPopup() {
+    const modal = document.getElementById('imagePopup');
+    const modalImg = document.getElementById('modalImg');
+    modal.style.display = 'flex'; // Exibe o popup
+    modalImg.src = images[currentImageIndex]; // Define a imagem inicial no popup
+}
+
+// Função para fechar o popup
+function closePopup() {
+    const modal = document.getElementById('imagePopup');
+    modal.style.display = 'none'; // Oculta o popup
+}
+
+// Função para alternar entre as imagens
+function changeImage(direction) {
+    currentImageIndex += direction; // Atualiza o índice com base na direção (1 para próxima, -1 para anterior)
+
+    // Verifica se o índice está fora dos limites do array
+    if (currentImageIndex < 0) {
+        currentImageIndex = images.length - 1; // Volta para a última imagem
+    } else if (currentImageIndex >= images.length) {
+        currentImageIndex = 0; // Volta para a primeira imagem
+    }
+
+    // Atualiza a imagem no popup e na imagem da empresa
+    document.getElementById('modalImg').src = images[currentImageIndex];
+    document.getElementById('empresaImg').src = images[currentImageIndex];
+}
+
+</script>
 <script src="script/slider.js"></script>
 <script src="script/href.js"></script>
 <script src="script/hamburguer.js"></script>
