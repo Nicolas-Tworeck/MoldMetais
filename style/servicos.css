@@ -61,13 +61,10 @@
             align-items: center;
             #servico-container2{
                 background: var(--black-color);
-                .image-servico{
-                    img{
-                        box-shadow: 0 5px 20px var(--white-color);
-                        
-                    }
-                }
+               
                 .descrition-projeto-servico{
+                    display: flex;
+                    align-items: center;
                     .title-projeto-servico{
                         h1{
                             color: var(--white-color);
