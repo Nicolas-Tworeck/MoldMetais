@@ -32,8 +32,8 @@ function email(){
 function emailCTH(){
     window.location.href = "mailto:contato@crealitytech.com.br";
 }
-function projeto1(){
-    window.location.href = "produto1.html";
+function longarina(){
+    window.location.href = "longarina.html";
 }
 
 function projeto2(){

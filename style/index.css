@@ -402,14 +402,13 @@
         a {
             width: 250px;
             margin: 10px 10px 10px 10px;
-            background: var(--white-color);
+            background: var(--yellow-black);
             padding: 10px;
             text-decoration: none;
-            border-radius: 10px;
+            border-radius: 2px;
             transition: 0.5s;
-
             img {
-                border-radius: 5px;
+                border-radius: 2px;
             }
 
             .label {
@@ -441,10 +440,10 @@
         a {
             width: 250px;
             margin: 10px 10px 10px 10px;
-            background: var(--white-color);
+            background: var(--yellow-black);
             padding: 10px;
             text-decoration: none;
-            border-radius: 10px;
+            border-radius: 2px;
             transition: 0.5s;
 
             img {
