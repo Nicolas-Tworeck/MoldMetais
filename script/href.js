@@ -39,6 +39,6 @@ function longarina(){
 function intercessaoEquip(){
     window.location.href = "intercessaoEquip.html";
 }
-function projeto3(){
-    window.location.href = "projeto3.html";
+function exaustao(){
+    window.location.href = "exaustao.html";
 }
