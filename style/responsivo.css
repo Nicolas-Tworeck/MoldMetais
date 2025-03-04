@@ -225,9 +225,7 @@
      }
         .slide-cell {
             a {
-                img{
-                    height: 105px;
-                }
+                
                 .label {
 
                     font-size: 10px;
