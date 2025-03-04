@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="style/produtosGeral.css">
+    <link rel="stylesheet" href="style/root.css">
+    <link rel="stylesheet" href="style/responsivo.css">
+    <link rel="stylesheet" href="style/produto1.css">
+    <link rel="icon" href="img/icon.svg">
+    <title>ESTRUTURA - MoldMetais</title>
+</head>
+
+<body>
+    <form>
+
+        <div class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo-container">
+                    <img src="img/Logo.png" alt="LOGO EMPRESA" width="80%">
+                </div>
+                <div class="nav-button-container">
+                    <a onclick="inicio()">INÍCIO</a>
+                    <a onclick="empresa()">A EMPRESA</a>
+                    <a onclick="produtos()">PRODUTOS</a>
+                    <a onclick="servicos()">SERVIÇOS</a>
+                    <a onclick="contato()">CONTATO</a>
+                </div>
+                <div class="hamburguer-container">
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="menu-mobile">
+                    <div class="menu-bar">
+                        <img src="img/logo-nav.svg" width="70%" alt="">
+                    </div>
+                    <a onclick="inicio()">INÍCIO</a>
+                    <a onclick="empresa()">A EMPRESA</a>
+                    <a onclick="produtos()">PRODUTOS</a>
+                    <a onclick="servicos()">SERVIÇOS</a>
+                    <a onclick="contato()">CONTATO</a>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="navbar-back">
+            <div class="nav-container">
+                <div class="nav-logo-container">
+                    <img src="img/Logo.png" alt="LOGO EMPRESA" width="80%">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="nav-header">
+            <div class="nav-header-container">
+                <a onclick="inicio()">Home</a>
+                <a onclick="produtos()"> >> Produtos</a>
+                <p>>> Etrutura</p>
+            </div>
+        </div>
+
+
+
+        <div class="gallery">
+            <div class="images">
+                <div class="thumbnails">
+                    <img src="img/estrutura/primeiro-estr.jpg" onclick="changeImage(this)" class="active">
+                    <img src="img/estrutura/segundo-estr.jpg" onclick="changeImage(this)">
+                    <img src="img/estrutura/terceiro-estr.jpg" onclick="changeImage(this)">
+                </div>
+                <!-- Imagem principal -->
+                <div class="main-image">
+                    <img id="mainImg" src="img/estrutura/primeiro-estr.jpg" alt="Imagem Principal" onclick="openModal()">
+                </div>
+            </div>
+
+
+            <!-- Miniaturas -->
+
+            <div class="info-produto">
+                <div class="name-produto">
+                    <h1>ESTRUTURA</h1>
+                </div>
+                <div class="categoria-projeto">
+                    <h2>CATEGORIA</h2>
+                </div>
+                <div class="descricao-projeto">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint aperiam eveniet reiciendis,
+                        officiis cum fugiat quasi excepturi explicabo eligendi, expedita unde eaque consequuntur minima
+                        molestiae rerum blanditiis velit ipsa quibusdam!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis recusandae dignissimos deserunt
+                        saepe nisi distinctio neque! Laborum aperiam quaerat ab commodi dicta, nulla, dolor eius odio,
+                        libero alias explicabo obcaecati.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Modal -->
+        <div id="modal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+                <img id="modalImg" src="" alt="Imagem Ampliada">
+                <span class="arrow left" onclick="changeModalImage(-1)">&#10094;</span>
+                <span class="arrow right" onclick="changeModalImage(1)">&#10095;</span>
+            </div>
+        </div>
+
+
+        <div class="rodape" id="contato">
+            <div class="rodape-container">
+                <div class="rodape-content">
+                    <div class="titles">
+                        <label>CONTATO</label>
+                    </div>
+                    <div class="content">
+                        <a onclick="whats()"><i class="bi bi-whatsapp"></i>(42) 3235-0389</a>
+                        <a href=""><i class="bi bi-instagram"></i>@moldmetais</a>
+                        <a onclick="email()"><i class="bi bi-envelope"></i>moldmetais@outlook.com.br</a>
+                        <a href=""><i class="bi bi-geo-alt"></i>Av. Euzébio de Queiróz, 551</a>
+                    </div>
+                </div>
+                <div class="rodape-content">
+
+                    <div class="content" id="image-rodape">
+                        <img src="img/Logo.png" width="300px" alt="">
+                    </div>
+                </div>
+                <div class="rodape-content">
+                    <div class="titles">
+                        <label>CONTATO CREALITY TECH</label>
+                    </div>
+                    <div class="content">
+                        <a onclick="whatsCTH()"><i class="bi bi-whatsapp"></i>(42)98403-3886</a>
+                        <a href=""><i class="bi bi-instagram"></i>@CrealityTech</a>
+                        <a onclick="emailCTH()"><i class="bi bi-envelope"></i>contato@crealitytech.com.br</a>
+                        <a href=""><i class="bi bi-browser-chrome"></i>www.crealitytech.com.br</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="whats-icon">
+            <a onclick="whats()">
+                <div class="icon-whats">
+                    <i class="bi bi-whatsapp"></i>
+                </div>
+            </a>
+        </div>
+    </form>
+</body>
+
+<script>
+    // Array de imagens da galeria
+    const images = [
+        "img/estrutura/primeiro-estr.jpg",
+        "img/estrutura/segundo-estr.jpg",
+        "img/estrutura/terceiro-estr.jpg"
+    ];
+
+    // Índice da imagem atual
+    let currentImageIndex = 0;
+
+    // Função para trocar a imagem principal
+    function changeImage(imgElement) {
+        const mainImg = document.getElementById('mainImg');
+        mainImg.src = imgElement.src; // Atualiza a imagem principal
+        currentImageIndex = Array.from(imgElement.parentElement.children).indexOf(imgElement); // Atualiza o índice
+
+        // Remove a classe 'active' de todas as miniaturas
+        const thumbnails = document.querySelectorAll('.thumbnails img');
+        thumbnails.forEach(thumb => thumb.classList.remove('active'));
+
+        // Adiciona a classe 'active' à miniatura clicada
+        imgElement.classList.add('active');
+    }
+
+    // Função para abrir o modal
+    function openModal() {
+        const modal = document.getElementById('modal');
+        const modalImg = document.getElementById('modalImg');
+        modal.style.display = 'flex'; // Exibe o modal
+        modalImg.src = images[currentImageIndex]; // Define a imagem no modal
+    }
+
+    // Função para fechar o modal
+    function closeModal() {
+        const modal = document.getElementById('modal');
+        modal.style.display = 'none'; // Oculta o modal
+    }
+
+    // Função para mudar a imagem no modal
+    function changeModalImage(direction) {
+        currentImageIndex += direction; // Atualiza o índice com base na direção (1 para próxima, -1 para anterior)
+
+        // Verifica se o índice está fora dos limites do array
+        if (currentImageIndex < 0) {
+            currentImageIndex = images.length - 1; // Volta para a última imagem
+        } else if (currentImageIndex >= images.length) {
+            currentImageIndex = 0; // Volta para a primeira imagem
+        }
+
+        // Atualiza a imagem no modal e na galeria
+        document.getElementById('modalImg').src = images[currentImageIndex];
+        document.getElementById('mainImg').src = images[currentImageIndex];
+
+        // Atualiza a miniatura ativa
+        const thumbnails = document.querySelectorAll('.thumbnails img');
+        thumbnails.forEach(thumb => thumb.classList.remove('active'));
+        thumbnails[currentImageIndex].classList.add('active');
+    }
+
+    // Função para abrir/fechar o menu mobile (opcional)
+    function toggleMenu() {
+        const menuMobile = document.getElementById('menuMobile');
+        menuMobile.style.display = menuMobile.style.display === 'flex' ? 'none' : 'flex';
+    }
+</script>
+
+<script src="script/hamburguer.js"></script>
+<script src="script/produtosGeral.js"></script>
+<script src="script/href.js"></script>
+<script src="script/slider.js"></script>
+
+</html>

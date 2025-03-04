@@ -239,6 +239,7 @@ form{
                         font-size: 15px;
                         margin: 10px 0 0 0;
                         color: var(--black-color);
+                        text-align: center;
                     }
                     p{
                         color: var(--gray-color);

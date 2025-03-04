@@ -42,3 +42,6 @@ function intercessaoEquip(){
 function exaustao(){
     window.location.href = "exaustao.html";
 }
+function estrutura(){
+    window.location.href = "estrutura.html";
+}
