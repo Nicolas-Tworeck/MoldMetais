@@ -128,9 +128,13 @@ body::-webkit-scrollbar-thumb {
             var(--black-color);
         }
         .descricao-projeto{
+            
             p{
                 margin: 10px 0 0 0;
                 text-align: justify;
+                label{
+                    margin-top: 50px;
+                }
             }
         }
     }

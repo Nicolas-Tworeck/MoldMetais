@@ -35,16 +35,18 @@ function email(){
 function emailCTH(){
     window.location.href = "mailto:contato@crealitytech.com.br";
 }
-function longarina(){
-    window.location.href = "longarina.html";
+
+
+function guardaCorpo(){
+    window.location.href = "guardacorpo.html";
 }
 
-function intercessaoEquip(){
-    window.location.href = "intercessaoEquip.html";
+function protecaoDeMaquinasEequip(){
+    window.location.href = "protecaoDeMaquinasEequip.html";
 }
-function exaustao(){
-    window.location.href = "exaustao.html";
+function gradesDePisoEdegrau(){
+    window.location.href = "gradesdepisoedegraus.html";
 }
-function estrutura(){
-    window.location.href = "estrutura.html";
+function canecas(){
+    window.location.href = "canecas.html";
 }
