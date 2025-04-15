@@ -27,8 +27,7 @@ function prevSlide() {
 prevButton.addEventListener('click', prevSlide);
 nextButton.addEventListener('click', nextSlide);
 
-// Avança automaticamente a cada 5 segundos
-setInterval(nextSlide, 5000);
+
 
 // Variáveis para detectar o gesto de arrasto (swipe)
 let startX = 0;

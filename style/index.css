@@ -426,9 +426,13 @@ body::-webkit-scrollbar-thumb {
                 font-weight: bolder;
                 margin: 10px;
                 text-align: justify;
-
+                h2{
+                    font-size: 20px;
+                    text-decoration: underline 1px solid var(--yellow-color);
+                }
                 label {
                     cursor: pointer;
+                    font-size: 10px;
                 }
             }
         }
@@ -465,9 +469,13 @@ body::-webkit-scrollbar-thumb {
                 font-weight: bolder;
                 margin: 10px;
                 text-align: justify;
-
+                h2{
+                    font-size: 20px;
+                    text-decoration: underline 1px solid var(--yellow-color);
+                }
                 label {
                     cursor: pointer;
+                    font-size: 13px;
                 }
             }
         }
