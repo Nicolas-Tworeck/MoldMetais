@@ -30,7 +30,7 @@ function instaMold(){
     window.location.href = "https://www.instagram.com/moldmetais_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==";
 }
 function email(){
-    window.location.href = "mailto:moldmetais@outlook.com.br";
+    window.location.href = "mailto:moldmetais@outlook.com";
 }
 function emailCTH(){
     window.location.href = "mailto:contato@crealitytech.com.br";
