@@ -50,3 +50,6 @@ function gradesDePisoEdegrau(){
 function canecas(){
     window.location.href = "canecas.html";
 }
+function siteCTH(){
+    window.location.href = "https://crealitytech.com.br/";
+}

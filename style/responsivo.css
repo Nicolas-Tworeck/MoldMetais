@@ -167,6 +167,12 @@
 }
 
 @media(max-width:550px) {
+    .slide {
+        width: 100px;
+        transition: transform 0.3s;
+        display: flex;
+        justify-content: center;
+    }
     .inicio {
         padding: 0;
 
