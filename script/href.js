@@ -27,7 +27,7 @@ function whatsCTH(){
     window.location.href = "https://wa.link/kh9e4r";
 }
 function instaMold(){
-    window.location.href = "https://www.instagram.com/moldmetais_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==";
+    window.location.href = "https://www.instagram.com/mold.metais?igsh=ZDFteTN0c2FleTFm";
 }
 function email(){
     window.location.href = "mailto:moldmetais@outlook.com";
